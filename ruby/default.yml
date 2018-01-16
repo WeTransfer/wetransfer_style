@@ -1,0 +1,42 @@
+# Only allow our set of cops
+AllCops:
+  DisabledByDefault: true
+  TargetRubyVersion: 2.3
+
+# Lint & Metrics will be enabled at the next iteration
+Layout:
+  Enabled: true
+Naming:
+  Enabled: true
+Style:
+  Enabled: true
+
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: false
+
+Style/Alias:
+  EnforcedStyle: prefer_alias_method
+Style/AsciiComments:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/DoubleNegation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/FormatStringToken:
+  Enabled: false
+Style/MultilineBlockChain:
+  Enabled: false
+Style/RescueStandardError:
+  EnforcedStyle: implicit
+Style/StructInheritance:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false
+Style/TrailingCommaInLiteral:
+  Enabled: false
+Style/ZeroLengthPredicate:
+  Enabled: false
