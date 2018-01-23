@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "wetransfer_style"
-  s.version = "0.1.0"
+  s.version = "0.4.0"
   s.summary = "At WeTransfer we code in style. This is our style."
   s.description = s.summary
   s.homepage = "https://github.com/WeTransfer/wetransfer_style"
