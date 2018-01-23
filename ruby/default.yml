@@ -1,42 +1,480 @@
-# Only allow our set of cops
+# Only allow our set of cops. We follow the whitelist approach, hence we only
+# specify what we *need*
 AllCops:
   DisabledByDefault: true
   TargetRubyVersion: 2.3
 
-# Lint & Metrics will be enabled at the next iteration
-Layout:
-  Enabled: true
-Naming:
-  Enabled: true
-Style:
-  Enabled: true
+Layout/AccessModifierIndentation:
+  Enabled: True
+Layout/AlignArray:
+  Enabled: True
+Layout/AlignHash:
+  Enabled: True
+Layout/AlignParameters:
+  Enabled: True
+Layout/BlockEndNewline:
+  Enabled: True
+Layout/CaseIndentation:
+  Enabled: True
+Layout/ClosingParenthesisIndentation:
+  Enabled: True
+Layout/CommentIndentation:
+  Enabled: True
+# TODO: This is not working as expected, as of rubocop 0.52.0
+# Layout/ElseAlignment:
+#   Enabled: True
+Layout/EmptyLineAfterMagicComment:
+  Enabled: True
+Layout/EmptyLineBetweenDefs:
+  Enabled: True
+Layout/EmptyLines:
+  Enabled: True
+Layout/EmptyLinesAroundAccessModifier:
+  Enabled: True
+Layout/EmptyLinesAroundArguments:
+  Enabled: True
+Layout/EmptyLinesAroundBeginBody:
+  Enabled: True
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: True
+Layout/EmptyLinesAroundClassBody:
+  Enabled: True
+Layout/EmptyLinesAroundExceptionHandlingKeywords:
+  Enabled: True
+Layout/EmptyLinesAroundMethodBody:
+  Enabled: True
+Layout/EndOfLine:
+  Enabled: True
+Layout/FirstArrayElementLineBreak:
+  Enabled: True
+Layout/FirstHashElementLineBreak:
+  Enabled: True
+Layout/FirstMethodArgumentLineBreak:
+  Enabled: True
+Layout/FirstMethodParameterLineBreak:
+  Enabled: True
+Layout/FirstParameterIndentation:
+  Enabled: True
+Layout/IndentArray:
+  Enabled: True
+  EnforcedStyle: consistent
+Layout/IndentAssignment:
+  Enabled: True
+Layout/IndentHash:
+  Enabled: True
+  EnforcedStyle: consistent
+Layout/IndentHeredoc:
+  Enabled: True
+Layout/IndentationConsistency:
+  Enabled: True
+# TODO: This is not working as expected, as of rubocop 0.52.0
+# Layout/IndentationWidth:
+#   Enabled: True
+Layout/InitialIndentation:
+  Enabled: True
+Layout/LeadingCommentSpace:
+  Enabled: True
+Layout/MultilineArrayBraceLayout:
+  Enabled: True
+Layout/MultilineBlockLayout:
+  Enabled: True
+Layout/MultilineHashBraceLayout:
+  Enabled: True
+Layout/MultilineOperationIndentation:
+  Enabled: True
+Layout/RescueEnsureAlignment:
+  Enabled: True
+Layout/SpaceAfterColon:
+  Enabled: True
+Layout/SpaceAfterComma:
+  Enabled: True
+Layout/SpaceAfterMethodName:
+  Enabled: True
+Layout/SpaceAfterNot:
+  Enabled: True
+Layout/SpaceAfterSemicolon:
+  Enabled: True
+Layout/SpaceAroundBlockParameters:
+  Enabled: True
+Layout/SpaceAroundEqualsInParameterDefault:
+  Enabled: True
+Layout/SpaceAroundKeyword:
+  Enabled: True
+Layout/SpaceAroundOperators:
+  Enabled: True
+Layout/SpaceBeforeBlockBraces:
+  Enabled: True
+Layout/SpaceBeforeComma:
+  Enabled: True
+Layout/SpaceBeforeComment:
+  Enabled: True
+Layout/SpaceBeforeFirstArg:
+  Enabled: True
+Layout/SpaceBeforeSemicolon:
+  Enabled: True
+Layout/SpaceInLambdaLiteral:
+  Enabled: True
+Layout/SpaceInsideArrayLiteralBrackets:
+  Enabled: True
+Layout/SpaceInsideArrayPercentLiteral:
+  Enabled: True
+Layout/SpaceInsideBlockBraces:
+  Enabled: True
+Layout/SpaceInsideParens:
+  Enabled: True
+Layout/SpaceInsidePercentLiteralDelimiters:
+  Enabled: True
+Layout/SpaceInsideRangeLiteral:
+  Enabled: True
+Layout/SpaceInsideReferenceBrackets:
+  Enabled: True
+Layout/SpaceInsideStringInterpolation:
+  Enabled: True
+Layout/Tab:
+  Enabled: True
+Layout/TrailingBlankLines:
+  Enabled: True
+Layout/TrailingWhitespace:
+  Enabled: True
+Lint/AmbiguousBlockAssociation:
+  Enabled: True
+Lint/AmbiguousRegexpLiteral:
+  Enabled: True
+Lint/BooleanSymbol:
+  Enabled: True
+Lint/CircularArgumentReference:
+  Enabled: True
+Lint/Debugger:
+  Enabled: True
+Lint/DeprecatedClassMethods:
+  Enabled: True
+Lint/DuplicateCaseCondition:
+  Enabled: True
+Lint/DuplicateMethods:
+  Enabled: True
+Lint/DuplicatedKey:
+  Enabled: True
+Lint/EachWithObjectArgument:
+  Enabled: True
+Lint/ElseLayout:
+  Enabled: True
+Lint/EmptyEnsure:
+  Enabled: True
+Lint/EmptyExpression:
+  Enabled: True
+Lint/EmptyInterpolation:
+  Enabled: True
+Lint/EmptyWhen:
+  Enabled: True
+# TODO: This is not working as expected, as of rubocop 0.52.0
+# Lint/EndAlignment:
+#   EnforcedStyleAlignWith: start_of_line
+Lint/EndInMethod:
+  Enabled: True
+Lint/EnsureReturn:
+  Enabled: True
+Lint/FloatOutOfRange:
+  Enabled: True
+Lint/FormatParameterMismatch:
+  Enabled: True
+Lint/ImplicitStringConcatenation:
+  Enabled: True
+Lint/IneffectiveAccessModifier:
+  Enabled: True
+Lint/InheritException:
+  Enabled: True
+  EnforcedStyle: standard_error
+Lint/InterpolationCheck:
+  Enabled: True
+Lint/LiteralAsCondition:
+  Enabled: True
+Lint/LiteralInInterpolation:
+  Enabled: True
+Lint/Loop:
+  Enabled: True
+Lint/MultipleCompare:
+  Enabled: True
+Lint/NestedMethodDefinition:
+  Enabled: True
+Lint/NestedPercentLiteral:
+  Enabled: True
+Lint/NextWithoutAccumulator:
+  Enabled: True
+Lint/NonLocalExitFromIterator:
+  Enabled: True
+Lint/ParenthesesAsGroupedExpression:
+  Enabled: True
+Lint/PercentStringArray:
+  Enabled: True
+Lint/PercentSymbolArray:
+  Enabled: True
+Lint/RandOne:
+  Enabled: True
+Lint/RedundantWithIndex:
+  Enabled: True
+Lint/RedundantWithObject:
+  Enabled: True
+Lint/RegexpAsCondition:
+  Enabled: True
+Lint/RequireParentheses:
+  Enabled: True
+Lint/RescueException:
+  Enabled: True
+Lint/RescueType:
+  Enabled: True
+Lint/ReturnInVoidContext:
+  Enabled: True
+Lint/ScriptPermission:
+  Enabled: True
+Lint/ShadowedArgument:
+  Enabled: True
+Lint/ShadowedException:
+  Enabled: True
+Lint/StringConversionInInterpolation:
+  Enabled: True
+Lint/Syntax:
+  Enabled: True
+Lint/UnderscorePrefixedVariableName:
+  Enabled: True
+Lint/UnifiedInteger:
+  Enabled: True
+Lint/UnneededRequireStatement:
+  Enabled: True
+Lint/UnneededSplatExpansion:
+  Enabled: True
+Lint/UnreachableCode:
+  Enabled: True
+Lint/UnusedBlockArgument:
+  Enabled: True
+Lint/UnusedMethodArgument:
+  Enabled: True
+Lint/UriEscapeUnescape:
+  Enabled: True
+Lint/UriRegexp:
+  Enabled: True
+Lint/UselessAccessModifier:
+  Enabled: True
+Lint/UselessAssignment:
+  Enabled: True
+Lint/UselessComparison:
+  Enabled: True
+Lint/UselessElseWithoutRescue:
+  Enabled: True
+Lint/UselessSetterCall:
+  Enabled: True
+Lint/Void:
+  Enabled: True
 
-Layout/SpaceInsideHashLiteralBraces:
-  Enabled: false
+Naming/AccessorMethodName:
+  Enabled: True
+Naming/BinaryOperatorParameterName:
+  Enabled: True
+Naming/ClassAndModuleCamelCase:
+  Enabled: True
+Naming/ConstantName:
+  Enabled: True
+Naming/FileName:
+  Enabled: True
+Naming/HeredocDelimiterCase:
+  Enabled: True
+Naming/HeredocDelimiterNaming:
+  Enabled: True
+Naming/MethodName:
+  Enabled: True
+Naming/PredicateName:
+  Enabled: True
+Naming/VariableName:
+  Enabled: True
 
 Style/Alias:
   EnforcedStyle: prefer_alias_method
-Style/AsciiComments:
-  Enabled: false
-Style/ClassAndModuleChildren:
-  Enabled: false
-Style/Documentation:
-  Enabled: false
-Style/DoubleNegation:
-  Enabled: false
-Style/FrozenStringLiteralComment:
-  Enabled: false
-Style/FormatStringToken:
-  Enabled: false
-Style/MultilineBlockChain:
-  Enabled: false
+  Enabled: True
+Style/ArrayJoin:
+  Enabled: True
+Style/BeginBlock:
+  Enabled: True
+Style/BlockComments:
+  Enabled: True
+Style/BracesAroundHashParameters:
+  Enabled: True
+  EnforcedStyle: context_dependent
+Style/CaseEquality:
+  Enabled: True
+Style/CharacterLiteral:
+  Enabled: True
+Style/ClassMethods:
+  Enabled: True
+Style/ColonMethodCall:
+  Enabled: True
+Style/ColonMethodDefinition:
+  Enabled: True
+Style/CommentAnnotation:
+  Enabled: True
+Style/ConditionalAssignment:
+  Enabled: True
+Style/DefWithParentheses:
+  Enabled: True
+Style/Dir:
+  Enabled: True
+Style/EachForSimpleLoop:
+  Enabled: True
+Style/EachWithObject:
+  Enabled: True
+Style/EmptyBlockParameter:
+  Enabled: True
+Style/EmptyCaseCondition:
+  Enabled: True
+Style/EmptyElse:
+  Enabled: True
+  EnforcedStyle: empty
+Style/EmptyLambdaParameter:
+  Enabled: True
+Style/EmptyLiteral:
+  Enabled: True
+Style/Encoding:
+  Enabled: True
+Style/EndBlock:
+  Enabled: True
+Style/EvenOdd:
+  Enabled: True
+Style/FlipFlop:
+  Enabled: True
+Style/For:
+  Enabled: True
+Style/GlobalVars:
+  Enabled: True
+Style/HashSyntax:
+  Enabled: True
+Style/IdenticalConditionalBranches:
+  Enabled: True
+Style/IfInsideElse:
+  Enabled: True
+Style/IfUnlessModifier:
+  Enabled: True
+Style/IfUnlessModifierOfIfUnless:
+  Enabled: True
+Style/IfWithSemicolon:
+  Enabled: True
+Style/InfiniteLoop:
+  Enabled: True
+Style/InverseMethods:
+  Enabled: True
+Style/LambdaCall:
+  Enabled: True
+Style/LineEndConcatenation:
+  Enabled: True
+Style/MethodCallWithoutArgsParentheses:
+  Enabled: True
+Style/MethodDefParentheses:
+  Enabled: True
+Style/MethodMissing:
+  Enabled: True
+Style/MinMax:
+  Enabled: True
+Style/MixinGrouping:
+  Enabled: True
+Style/MixinUsage:
+  Enabled: True
+Style/MultilineIfThen:
+  Enabled: True
+Style/MultilineMemoization:
+  Enabled: True
+Style/MultilineTernaryOperator:
+  Enabled: True
+Style/MultipleComparison:
+  Enabled: True
+Style/NegatedIf:
+  Enabled: True
+Style/NegatedWhile:
+  Enabled: True
+Style/NestedModifier:
+  Enabled: True
+Style/NestedParenthesizedCalls:
+  Enabled: True
+Style/NestedTernaryOperator:
+  Enabled: True
+Style/Next:
+  Enabled: True
+Style/NilComparison:
+  Enabled: True
+Style/NonNilCheck:
+  Enabled: True
+Style/Not:
+  Enabled: True
+Style/OneLineConditional:
+  Enabled: True
+Style/OptionHash:
+  Enabled: True
+Style/OptionalArguments:
+  Enabled: True
+Style/OrAssignment:
+  Enabled: True
+Style/ParallelAssignment:
+  Enabled: True
+Style/ParenthesesAroundCondition:
+  Enabled: True
+Style/PercentQLiterals:
+  Enabled: True
+Style/RaiseArgs:
+  Enabled: True
+Style/RandomWithOffset:
+  Enabled: True
+Style/RedundantBegin:
+  Enabled: True
+Style/RedundantConditional:
+  Enabled: True
+Style/RedundantException:
+  Enabled: True
+Style/RedundantFreeze:
+  Enabled: True
+Style/RedundantParentheses:
+  Enabled: True
+Style/RedundantReturn:
+  Enabled: True
+Style/RedundantSelf:
+  Enabled: True
 Style/RescueStandardError:
+  Enabled: True
   EnforcedStyle: implicit
-Style/StructInheritance:
-  Enabled: false
-Style/SymbolArray:
-  Enabled: false
-Style/TrailingCommaInLiteral:
-  Enabled: false
-Style/ZeroLengthPredicate:
-  Enabled: false
+Style/ReturnNil:
+  Enabled: True
+Style/SelfAssignment:
+  Enabled: True
+Style/Semicolon:
+  Enabled: True
+Style/SingleLineMethods:
+  Enabled: True
+Style/StabbyLambdaParentheses:
+  Enabled: True
+Style/StderrPuts:
+  Enabled: True
+Style/StringLiterals:
+  Enabled: True
+Style/StringLiteralsInInterpolation:
+  Enabled: True
+Style/StringMethods:
+  Enabled: True
+Style/SymbolLiteral:
+  Enabled: True
+Style/SymbolProc:
+  Enabled: True
+Style/TernaryParentheses:
+  Enabled: True
+Style/TrailingBodyOnMethodDefinition:
+  Enabled: True
+Style/TrailingMethodEndStatement:
+  Enabled: True
+Style/UnneededCapitalW:
+  Enabled: True
+Style/UnneededInterpolation:
+  Enabled: True
+Style/VariableInterpolation:
+  Enabled: True
+Style/WhenThen:
+  Enabled: True
+Style/WhileUntilDo:
+  Enabled: True
+Style/WhileUntilModifier:
+  Enabled: True
+Style/YodaCondition:
+  Enabled: True
