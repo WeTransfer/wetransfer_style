@@ -1,0 +1,7 @@
+AllCops:
+  DisabledByDefault: true
+  TargetRubyVersion: 2.3
+Lint/Syntax:
+  Enabled: True
+Lint/Debugger:
+  Enabled: True

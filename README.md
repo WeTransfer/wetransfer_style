@@ -25,3 +25,10 @@ Add a `.rubocop.yml` in the root of you repository, having:
 inherit_gem:
   wetransfer_style: ruby/default.yml
 ```
+
+In case you only want to use rubocop to check for syntax errors:
+
+```
+inherit_gem
+  wetransfer_style: ruby/lint_only.yml
+```
