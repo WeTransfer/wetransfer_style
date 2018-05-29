@@ -451,7 +451,7 @@ Style/StderrPuts:
 Style/StringLiterals:
   Enabled: False
 Style/StringLiteralsInInterpolation:
-  Enabled: True
+  Enabled: False
 Style/StringMethods:
   Enabled: True
 Style/SymbolLiteral:
