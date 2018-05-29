@@ -449,9 +449,9 @@ Style/StabbyLambdaParentheses:
 Style/StderrPuts:
   Enabled: True
 Style/StringLiterals:
-  Enabled: True
+  Enabled: False
 Style/StringLiteralsInInterpolation:
-  Enabled: True
+  Enabled: False
 Style/StringMethods:
   Enabled: True
 Style/SymbolLiteral:
