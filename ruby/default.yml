@@ -265,6 +265,11 @@ Lint/UselessSetterCall:
 Lint/Void:
   Enabled: True
 
+Metrics/LineLength:
+  Max: 80
+  Severity: warning
+  Enabled: True
+
 Naming/AccessorMethodName:
   Enabled: True
 Naming/BinaryOperatorParameterName:
