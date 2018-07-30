@@ -267,7 +267,7 @@ Lint/Void:
 
 Metrics/LineLength:
   Max: 80
-  Severity: warning
+  Severity: refactor
   Enabled: True
 
 Naming/AccessorMethodName:
