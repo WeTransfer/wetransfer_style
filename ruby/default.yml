@@ -367,7 +367,9 @@ Style/MethodCallWithoutArgsParentheses:
   Enabled: True
 Style/MethodDefParentheses:
   Enabled: True
-Style/MethodMissing:
+Style/MethodMissingSuper:
+  Enabled: True
+Style/MissingRespondToMissing:
   Enabled: True
 Style/MinMax:
   Enabled: True
