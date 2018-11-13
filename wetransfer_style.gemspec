@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "wetransfer_style"
-  s.version = "0.6.0"
+  s.version = "0.7.0"
   s.summary = "At WeTransfer we code in style. This is our style."
   s.description = s.summary
   s.homepage = "https://github.com/WeTransfer/wetransfer_style"
@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir["README.md", "LICENSE", "ruby/*.yml"]
 
-  s.add_dependency "rubocop", "0.52.1"
+  s.add_dependency "rubocop", "0.60.0"
 
   s.email = "linkyndy@gmail.com"
   s.authors = "Andrei Horak"
