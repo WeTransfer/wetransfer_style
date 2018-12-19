@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "wetransfer_style"
-  s.version = "0.6.0"
+  s.version = "0.6.2"
   s.summary = "At WeTransfer we code in style. This is our style."
   s.description = s.summary
   s.homepage = "https://github.com/WeTransfer/wetransfer_style"
@@ -10,6 +10,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rubocop", "0.52.1"
 
-  s.email = "linkyndy@gmail.com"
-  s.authors = "Andrei Horak"
+  s.email = "developers@wetransfer.com"
+  s.authors = `git log --all --format='%cN' |sort -u`.split("\n")
 end
