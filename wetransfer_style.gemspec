@@ -13,4 +13,10 @@ Gem::Specification.new do |s|
 
   s.email = "developers@wetransfer.com"
   s.authors = `git log --all --format='%cN' |sort -u`.split("\n")
+
+  s.metadata = {
+    "homepage_uri" => "https://github.com/WeTransfer/wetransfer_style",
+    "changelog_uri" => "https://github.com/WeTransfer/wetransfer_style/blob/master/CHANGELOG.md",
+    "source_code_uri" => "https://github.com/WeTransfer/wetransfer_style/",
+  }
 end
