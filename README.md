@@ -30,14 +30,15 @@ inherit_gem:
 ## Contributing
 
 Thanks for taking the time to bring our style to the next level. If you aren't a
-contributor, please follow step 1 through 4. If you are a contributor to the
+contributor, please follow step 1 through 5. If you are a contributor to the
 repository, please follow all steps.
 
 1. (Fork and) Clone this repository
 2. Make your changes
-3. Bump the version number
-4. Create a Pull Request
-5. Merge the PR on enough approvals
-6. Pull latest changes on your system
-7. Build the gem with `gem build wetransfer_style.gemspec`
-8. Push your changes with `gem push wetransfer_style-x.y.z.gem`
+3. Make a concise entry in ./CHANGELOG.md
+4. Bump the version number
+5. Create a Pull Request
+6. Merge the PR on enough approvals
+7. Pull latest changes on your system
+8. Build the gem with `gem build wetransfer_style.gemspec`
+9. Push your changes with `gem push wetransfer_style-x.y.z.gem`
