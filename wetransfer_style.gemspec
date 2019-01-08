@@ -6,10 +6,11 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/WeTransfer/wetransfer_style"
   s.license = "MIT"
 
-  s.files = Dir["README.md", "LICENSE", "ruby/*.yml"]
+  s.files = Dir["README.md", "LICENSE", "ruby/*.yml", "CHANGELOG.md"]
 
-  # lets not allow a major bump for Rubocop, but there is nothing special about 0.61.1
-  s.add_dependency "rubocop", "~> 0.61.1"
+  # Pin Rubocop to a specific version, so CI bundle will not differ from any other
+  # developer setup. This increases predictability of our pipeline.
+  s.add_dependency "rubocop", "0.61.1"
 
   s.email = "developers@wetransfer.com"
   s.authors = `git log --all --format='%cN' |sort -u`.split("\n")
@@ -17,6 +18,6 @@ Gem::Specification.new do |s|
   s.metadata = {
     "homepage_uri" => "https://github.com/WeTransfer/wetransfer_style",
     "changelog_uri" => "https://github.com/WeTransfer/wetransfer_style/blob/master/CHANGELOG.md",
-    "source_code_uri" => "https://github.com/WeTransfer/wetransfer_style/",
+    "source_code_uri" => "https://github.com/WeTransfer/wetransfer_style",
   }
 end

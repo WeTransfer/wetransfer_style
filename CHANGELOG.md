@@ -2,8 +2,18 @@
 
 ## 0.6.4
 
-Add changelog, homepage and source code metadata so Rubygems can create links
+[Added]
+
+- This changelog file
+- Rubygems metadata in gemspec so other libs can parse this changelog
+- Homepage and repo-info added to metadata because we can
+
+[Changed]
+
+- Pin Rubocop to '0.61.1'
 
 ## 0.6.3
 
-Update Rubocop to '~> 0.61.1'
+[Changed]
+
+- Update Rubocop to '~> 0.61.1'
