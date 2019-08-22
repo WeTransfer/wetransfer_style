@@ -173,6 +173,8 @@ Lint/EndInMethod:
   Enabled: True
 Lint/EnsureReturn:
   Enabled: True
+Lint/FlipFlop:
+  Enabled: True
 Lint/FloatOutOfRange:
   Enabled: True
 Lint/FormatParameterMismatch:
@@ -336,8 +338,6 @@ Style/Encoding:
 Style/EndBlock:
   Enabled: True
 Style/EvenOdd:
-  Enabled: True
-Style/FlipFlop:
   Enabled: True
 Style/For:
   Enabled: True
