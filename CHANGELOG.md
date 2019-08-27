@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.5
+
+[Changed]
+
+- Changed Style/FlipFlop to Lint/FlipFlop [PR #13](https://github.com/WeTransfer/wetransfer_style/pull/13)
+
 ## 0.6.4
 
 [Added]
