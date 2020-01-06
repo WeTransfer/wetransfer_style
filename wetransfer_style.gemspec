@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
 
   # Pin Rubocop to a specific version, so CI bundle will not differ from any other
   # developer setup. This increases predictability of our pipeline.
-  s.add_dependency "rubocop", "0.61.1"
+  s.add_dependency "rubocop", "0.79.0"
 
   s.email = "developers@wetransfer.com"
   s.authors = `git log --all --format='%cN' |sort -u`.split("\n")
