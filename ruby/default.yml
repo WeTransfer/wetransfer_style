@@ -2,15 +2,13 @@
 # specify what we *need*
 AllCops:
   DisabledByDefault: true
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.7
 
 Layout/AccessModifierIndentation:
   Enabled: True
-Layout/AlignArray:
+Layout/ArrayAlignment:
   Enabled: True
-Layout/AlignHash:
-  Enabled: True
-Layout/AlignParameters:
+Layout/AssignmentIndentation:
   Enabled: True
 Layout/BlockEndNewline:
   Enabled: True
@@ -45,8 +43,14 @@ Layout/EmptyLinesAroundMethodBody:
   Enabled: True
 Layout/EndOfLine:
   Enabled: True
+Layout/FirstArrayElementIndentation:
+  Enabled: True
+  EnforcedStyle: consistent
 Layout/FirstArrayElementLineBreak:
   Enabled: True
+Layout/FirstHashElementIndentation:
+  Enabled: True
+  EnforcedStyle: consistent
 Layout/FirstHashElementLineBreak:
   Enabled: True
 Layout/FirstMethodArgumentLineBreak:
@@ -55,15 +59,7 @@ Layout/FirstMethodParameterLineBreak:
   Enabled: True
 Layout/FirstParameterIndentation:
   Enabled: True
-Layout/IndentArray:
-  Enabled: True
-  EnforcedStyle: consistent
-Layout/IndentAssignment:
-  Enabled: True
-Layout/IndentHash:
-  Enabled: True
-  EnforcedStyle: consistent
-Layout/IndentHeredoc:
+Layout/HeredocIndentation:
   Enabled: True
 Layout/IndentationConsistency:
   Enabled: True
@@ -71,6 +67,8 @@ Layout/IndentationConsistency:
 # Layout/IndentationWidth:
 #   Enabled: True
 Layout/InitialIndentation:
+  Enabled: True
+Layout/HashAlignment:
   Enabled: True
 Layout/LeadingCommentSpace:
   Enabled: True
@@ -81,6 +79,8 @@ Layout/MultilineBlockLayout:
 Layout/MultilineHashBraceLayout:
   Enabled: True
 Layout/MultilineOperationIndentation:
+  Enabled: True
+Layout/ParameterAlignment:
   Enabled: True
 Layout/RescueEnsureAlignment:
   Enabled: True
@@ -132,7 +132,7 @@ Layout/SpaceInsideStringInterpolation:
   Enabled: True
 Layout/Tab:
   Enabled: True
-Layout/TrailingBlankLines:
+Layout/TrailingEmptyLines:
   Enabled: True
 Layout/TrailingWhitespace:
   Enabled: True
@@ -152,7 +152,7 @@ Lint/DuplicateCaseCondition:
   Enabled: True
 Lint/DuplicateMethods:
   Enabled: True
-Lint/DuplicatedKey:
+Lint/DuplicateHashKey:
   Enabled: True
 Lint/EachWithObjectArgument:
   Enabled: True
@@ -194,7 +194,7 @@ Lint/LiteralInInterpolation:
   Enabled: True
 Lint/Loop:
   Enabled: True
-Lint/MultipleCompare:
+Lint/MultipleComparison:
   Enabled: True
 Lint/NestedMethodDefinition:
   Enabled: True
@@ -211,6 +211,10 @@ Lint/PercentStringArray:
 Lint/PercentSymbolArray:
   Enabled: True
 Lint/RandOne:
+  Enabled: True
+Lint/RedundantRequireStatement:
+  Enabled: True
+Lint/RedundantSplatExpansion:
   Enabled: True
 Lint/RedundantWithIndex:
   Enabled: True
@@ -232,17 +236,13 @@ Lint/ShadowedArgument:
   Enabled: True
 Lint/ShadowedException:
   Enabled: True
-Lint/StringConversionInInterpolation:
+Lint/RedundantStringCoercion:
   Enabled: True
 Lint/Syntax:
   Enabled: True
 Lint/UnderscorePrefixedVariableName:
   Enabled: True
 Lint/UnifiedInteger:
-  Enabled: True
-Lint/UnneededRequireStatement:
-  Enabled: True
-Lint/UnneededSplatExpansion:
   Enabled: True
 Lint/UnreachableCode:
   Enabled: True
@@ -423,11 +423,15 @@ Style/RandomWithOffset:
   Enabled: True
 Style/RedundantBegin:
   Enabled: True
+Style/RedundantCapitalW:
+  Enabled: True
 Style/RedundantConditional:
   Enabled: True
 Style/RedundantException:
   Enabled: True
 Style/RedundantFreeze:
+  Enabled: True
+Style/RedundantInterpolation:
   Enabled: True
 Style/RedundantParentheses:
   Enabled: True
@@ -465,10 +469,6 @@ Style/TernaryParentheses:
 Style/TrailingBodyOnMethodDefinition:
   Enabled: True
 Style/TrailingMethodEndStatement:
-  Enabled: True
-Style/UnneededCapitalW:
-  Enabled: True
-Style/UnneededInterpolation:
   Enabled: True
 Style/VariableInterpolation:
   Enabled: True
