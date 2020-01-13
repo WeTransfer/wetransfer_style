@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.7.0
+
+[Changed]
+
+- Pin Rubocop version to 0.79.0
+- Updated necessary linters' names.
+
 ## 0.6.5
 
 [Changed]
