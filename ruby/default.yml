@@ -377,6 +377,9 @@ Style/MixinGrouping:
   Enabled: True
 Style/MixinUsage:
   Enabled: True
+Style/ModuleFunction:
+  Enabled: True
+  EnforcedStyle: extend_self
 Style/MultilineIfThen:
   Enabled: True
 Style/MultilineMemoization:
