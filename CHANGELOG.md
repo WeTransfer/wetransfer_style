@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.0
+
+[Changed]
+
+- Set `EnforcedStyle: extend_self` for `Style/ModuleFunction`
+
 ## 0.7.0
 
 [Changed]
