@@ -2,7 +2,8 @@
 # specify what we *need*
 AllCops:
   DisabledByDefault: true
-  TargetRubyVersion: 2.7
+  TargetRubyVersion: 3.0
+  SuggestExtensions: False
 
 Layout/AccessModifierIndentation:
   Enabled: True
@@ -18,9 +19,6 @@ Layout/ClosingParenthesisIndentation:
   Enabled: True
 Layout/CommentIndentation:
   Enabled: True
-# TODO: This is not working as expected, as of rubocop 0.52.0
-# Layout/ElseAlignment:
-#   Enabled: True
 Layout/EmptyLineAfterMagicComment:
   Enabled: True
 Layout/EmptyLineBetweenDefs:
@@ -54,7 +52,7 @@ Layout/FirstHashElementIndentation:
 Layout/FirstHashElementLineBreak:
   Enabled: True
 Layout/FirstMethodArgumentLineBreak:
-  Enabled: True
+  Enabled: False
 Layout/FirstMethodParameterLineBreak:
   Enabled: True
 Layout/FirstParameterIndentation:
@@ -63,9 +61,6 @@ Layout/HeredocIndentation:
   Enabled: True
 Layout/IndentationConsistency:
   Enabled: True
-# TODO: This is not working as expected, as of rubocop 0.52.0
-# Layout/IndentationWidth:
-#   Enabled: True
 Layout/InitialIndentation:
   Enabled: True
 Layout/HashAlignment:
@@ -130,7 +125,7 @@ Layout/SpaceInsideReferenceBrackets:
   Enabled: True
 Layout/SpaceInsideStringInterpolation:
   Enabled: True
-Layout/Tab:
+Layout/IndentationStyle:
   Enabled: True
 Layout/TrailingEmptyLines:
   Enabled: True
@@ -166,11 +161,6 @@ Lint/EmptyInterpolation:
   Enabled: True
 Lint/EmptyWhen:
   Enabled: True
-# TODO: This is not working as expected, as of rubocop 0.52.0
-# Lint/EndAlignment:
-#   EnforcedStyleAlignWith: start_of_line
-Lint/EndInMethod:
-  Enabled: True
 Lint/EnsureReturn:
   Enabled: True
 Lint/FlipFlop:
@@ -193,6 +183,8 @@ Lint/LiteralAsCondition:
 Lint/LiteralInInterpolation:
   Enabled: True
 Lint/Loop:
+  Enabled: True
+Lint/MissingSuper:
   Enabled: True
 Lint/MultipleComparison:
   Enabled: True
@@ -249,7 +241,7 @@ Lint/UnreachableCode:
 Lint/UnusedBlockArgument:
   Enabled: True
 Lint/UnusedMethodArgument:
-  Enabled: True
+  Enabled: False
 Lint/UriEscapeUnescape:
   Enabled: True
 Lint/UriRegexp:
@@ -258,7 +250,7 @@ Lint/UselessAccessModifier:
   Enabled: True
 Lint/UselessAssignment:
   Enabled: True
-Lint/UselessComparison:
+Lint/BinaryOperatorWithIdenticalOperands:
   Enabled: True
 Lint/UselessElseWithoutRescue:
   Enabled: True
@@ -280,9 +272,9 @@ Naming/FileName:
 Naming/HeredocDelimiterCase:
   Enabled: True
 Naming/HeredocDelimiterNaming:
-  Enabled: True
+  Enabled: False
 Naming/MethodName:
-  Enabled: True
+  Enabled: False
 Naming/PredicateName:
   Enabled: True
 Naming/VariableName:
@@ -297,9 +289,6 @@ Style/BeginBlock:
   Enabled: True
 Style/BlockComments:
   Enabled: True
-Style/BracesAroundHashParameters:
-  Enabled: True
-  EnforcedStyle: context_dependent
 Style/CaseEquality:
   Enabled: True
 Style/CharacterLiteral:
@@ -366,8 +355,6 @@ Style/LineEndConcatenation:
 Style/MethodCallWithoutArgsParentheses:
   Enabled: True
 Style/MethodDefParentheses:
-  Enabled: True
-Style/MethodMissingSuper:
   Enabled: True
 Style/MissingRespondToMissing:
   Enabled: True
