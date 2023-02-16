@@ -359,8 +359,6 @@ Style/EnvHome:
   Enabled: True
 Style/EvenOdd:
   Enabled: True
-Style/FetchEnvVar:
-  Enabled: True
 Style/FileRead:
   Enabled: True
 Style/FileWrite:
@@ -371,6 +369,7 @@ Style/GlobalVars:
   Enabled: True
 Style/HashSyntax:
   Enabled: True
+  EnforcedShorthandSyntax: either
 Style/IdenticalConditionalBranches:
   Enabled: True
 Style/IfInsideElse:
@@ -409,15 +408,12 @@ Style/MinMax:
   Enabled: True
 Style/MinMaxComparison:
   Enabled: True
-Style/MissingElse:
-  Enabled: True
 Style/MixinGrouping:
   Enabled: True
 Style/MixinUsage:
   Enabled: True
 Style/ModuleFunction:
   Enabled: True
-  EnforcedStyle: extend_self
 Style/MultilineIfThen:
   Enabled: True
 Style/MultilineMemoization:

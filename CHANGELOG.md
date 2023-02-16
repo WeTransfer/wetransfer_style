@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.0
+
+[Changed]
+
+- Remove and tweak a few cops
+
 ## 2.0.0
 
 [Changed]
