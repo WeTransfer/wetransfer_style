@@ -2,7 +2,7 @@
 # specify what we *need*
 AllCops:
   DisabledByDefault: true
-  TargetRubyVersion: 3.0
+  TargetRubyVersion: 3.2
   SuggestExtensions: False
 
 Layout/AccessModifierIndentation:
@@ -67,11 +67,17 @@ Layout/HashAlignment:
   Enabled: True
 Layout/LeadingCommentSpace:
   Enabled: True
+Layout/LineContinuationLeadingSpace:
+  Enabled: True
+Layout/LineContinuationSpacing:
+  Enabled: True
 Layout/MultilineArrayBraceLayout:
   Enabled: True
 Layout/MultilineBlockLayout:
   Enabled: True
 Layout/MultilineHashBraceLayout:
+  Enabled: True
+Layout/MultilineMethodParameterLineBreaks:
   Enabled: True
 Layout/MultilineOperationIndentation:
   Enabled: True
@@ -131,6 +137,7 @@ Layout/TrailingEmptyLines:
   Enabled: True
 Layout/TrailingWhitespace:
   Enabled: True
+
 Lint/AmbiguousBlockAssociation:
   Enabled: True
 Lint/AmbiguousRegexpLiteral:
@@ -139,11 +146,15 @@ Lint/BooleanSymbol:
   Enabled: True
 Lint/CircularArgumentReference:
   Enabled: True
+Lint/ConstantOverwrittenInRescue:
+  Enabled: True
 Lint/Debugger:
   Enabled: True
 Lint/DeprecatedClassMethods:
   Enabled: True
 Lint/DuplicateCaseCondition:
+  Enabled: True
+Lint/DuplicateMagicComment:
   Enabled: True
 Lint/DuplicateMethods:
   Enabled: True
@@ -194,6 +205,8 @@ Lint/NestedPercentLiteral:
   Enabled: True
 Lint/NextWithoutAccumulator:
   Enabled: True
+Lint/NonAtomicFileOperation:
+  Enabled: True
 Lint/NonLocalExitFromIterator:
   Enabled: True
 Lint/ParenthesesAsGroupedExpression:
@@ -212,9 +225,13 @@ Lint/RedundantWithIndex:
   Enabled: True
 Lint/RedundantWithObject:
   Enabled: True
+Lint/RefinementImportMethods:
+  Enabled: True
 Lint/RegexpAsCondition:
   Enabled: True
 Lint/RequireParentheses:
+  Enabled: True
+Lint/RequireRangeParentheses:
   Enabled: True
 Lint/RescueException:
   Enabled: True
@@ -250,9 +267,11 @@ Lint/UselessAccessModifier:
   Enabled: True
 Lint/UselessAssignment:
   Enabled: True
+Lint/UselessRuby2Keywords:
+  Enabled: True
 Lint/BinaryOperatorWithIdenticalOperands:
   Enabled: True
-Lint/UselessElseWithoutRescue:
+Lint/UselessRescue:
   Enabled: True
 Lint/UselessSetterCall:
   Enabled: True
@@ -262,6 +281,8 @@ Lint/Void:
 Naming/AccessorMethodName:
   Enabled: True
 Naming/BinaryOperatorParameterName:
+  Enabled: True
+Naming/BlockForwarding:
   Enabled: True
 Naming/ClassAndModuleCamelCase:
   Enabled: True
@@ -283,6 +304,8 @@ Naming/VariableName:
 Style/Alias:
   EnforcedStyle: prefer_alias_method
   Enabled: True
+Style/ArrayIntersect:
+  Enabled: True
 Style/ArrayJoin:
   Enabled: True
 Style/BeginBlock:
@@ -295,11 +318,15 @@ Style/CharacterLiteral:
   Enabled: True
 Style/ClassMethods:
   Enabled: True
+Style/ComparableClamp:
+  Enabled: True
 Style/ColonMethodCall:
   Enabled: True
 Style/ColonMethodDefinition:
   Enabled: True
 Style/CommentAnnotation:
+  Enabled: True
+Style/ConcatArrayLiterals:
   Enabled: True
 Style/ConditionalAssignment:
   Enabled: True
@@ -318,6 +345,8 @@ Style/EmptyCaseCondition:
 Style/EmptyElse:
   Enabled: True
   EnforcedStyle: empty
+Style/EmptyHeredoc:
+  Enabled: True
 Style/EmptyLambdaParameter:
   Enabled: True
 Style/EmptyLiteral:
@@ -326,7 +355,15 @@ Style/Encoding:
   Enabled: True
 Style/EndBlock:
   Enabled: True
+Style/EnvHome:
+  Enabled: True
 Style/EvenOdd:
+  Enabled: True
+Style/FetchEnvVar:
+  Enabled: True
+Style/FileRead:
+  Enabled: True
+Style/FileWrite:
   Enabled: True
 Style/For:
   Enabled: True
@@ -348,9 +385,19 @@ Style/InfiniteLoop:
   Enabled: True
 Style/InverseMethods:
   Enabled: True
+Style/InvertibleUnlessCondition:
+  Enabled: True
 Style/LambdaCall:
   Enabled: True
 Style/LineEndConcatenation:
+  Enabled: True
+Style/MagicCommentFormat:
+  Enabled: True
+Style/MapCompactWithConditionalBlock:
+  Enabled: True
+Style/MapToHash:
+  Enabled: True
+Style/MapToSet:
   Enabled: True
 Style/MethodCallWithoutArgsParentheses:
   Enabled: True
@@ -359,6 +406,10 @@ Style/MethodDefParentheses:
 Style/MissingRespondToMissing:
   Enabled: True
 Style/MinMax:
+  Enabled: True
+Style/MinMaxComparison:
+  Enabled: True
+Style/MissingElse:
   Enabled: True
 Style/MixinGrouping:
   Enabled: True
@@ -379,6 +430,8 @@ Style/NegatedIf:
   Enabled: True
 Style/NegatedWhile:
   Enabled: True
+Style/NestedFileDirname:
+  Enabled: True
 Style/NestedModifier:
   Enabled: True
 Style/NestedParenthesizedCalls:
@@ -393,7 +446,13 @@ Style/NonNilCheck:
   Enabled: True
 Style/Not:
   Enabled: True
+Style/ObjectThen:
+  Enabled: True
 Style/OneLineConditional:
+  Enabled: True
+Style/OpenStructUse:
+  Enabled: True
+Style/OperatorMethodCall:
   Enabled: True
 Style/OptionHash:
   Enabled: True
@@ -417,9 +476,19 @@ Style/RedundantCapitalW:
   Enabled: True
 Style/RedundantConditional:
   Enabled: True
+Style/RedundantConstantBase:
+  Enabled: True
+Style/RedundantDoubleSplatHashBraces:
+  Enabled: True
+Style/RedundantEach:
+  Enabled: True
 Style/RedundantException:
   Enabled: True
 Style/RedundantFreeze:
+  Enabled: True
+Style/RedundantHeredocDelimiterQuotes:
+  Enabled: True
+Style/RedundantInitialize:
   Enabled: True
 Style/RedundantInterpolation:
   Enabled: True
@@ -429,10 +498,16 @@ Style/RedundantReturn:
   Enabled: True
 Style/RedundantSelf:
   Enabled: True
+Style/RedundantStringEscape:
+  Enabled: True
+Style/RequireOrder:
+  Enabled: True
 Style/RescueStandardError:
   Enabled: True
   EnforcedStyle: implicit
 Style/ReturnNil:
+  Enabled: True
+Style/SelectByRegexp:
   Enabled: True
 Style/SelfAssignment:
   Enabled: True
@@ -469,4 +544,6 @@ Style/WhileUntilDo:
 Style/WhileUntilModifier:
   Enabled: True
 Style/YodaCondition:
+  Enabled: True
+Style/YodaExpression:
   Enabled: True
