@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.0.0
+
+[Changed]
+
+- Pin Rubocop version to 1.59.0
+- Set TargetRubyVersion to 3.3
+
 ## 2.1.0
 
 [Changed]

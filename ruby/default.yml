@@ -2,7 +2,7 @@
 # specify what we *need*
 AllCops:
   DisabledByDefault: true
-  TargetRubyVersion: 3.2
+  TargetRubyVersion: 3.3
   SuggestExtensions: False
 
 Layout/AccessModifierIndentation:
@@ -156,6 +156,8 @@ Lint/DuplicateCaseCondition:
   Enabled: True
 Lint/DuplicateMagicComment:
   Enabled: True
+Lint/DuplicateMatchPattern:
+  Enabled: True
 Lint/DuplicateMethods:
   Enabled: True
 Lint/DuplicateHashKey:
@@ -189,6 +191,8 @@ Lint/InheritException:
   EnforcedStyle: standard_error
 Lint/InterpolationCheck:
   Enabled: True
+Lint/ItWithoutArgumentsInBlock:
+  Enabled: True
 Lint/LiteralAsCondition:
   Enabled: True
 Lint/LiteralInInterpolation:
@@ -196,6 +200,8 @@ Lint/LiteralInInterpolation:
 Lint/Loop:
   Enabled: True
 Lint/MissingSuper:
+  Enabled: True
+Lint/MixedCaseRange:
   Enabled: True
 Lint/MultipleComparison:
   Enabled: True
@@ -217,9 +223,13 @@ Lint/PercentSymbolArray:
   Enabled: True
 Lint/RandOne:
   Enabled: True
+Lint/RedundantRegexpQuantifiers:
+  Enabled: True
 Lint/RedundantRequireStatement:
   Enabled: True
 Lint/RedundantSplatExpansion:
+  Enabled: True
+Lint/RedundantStringCoercion:
   Enabled: True
 Lint/RedundantWithIndex:
   Enabled: True
@@ -244,8 +254,6 @@ Lint/ScriptPermission:
 Lint/ShadowedArgument:
   Enabled: True
 Lint/ShadowedException:
-  Enabled: True
-Lint/RedundantStringCoercion:
   Enabled: True
 Lint/Syntax:
   Enabled: True
@@ -304,6 +312,8 @@ Naming/VariableName:
 Style/Alias:
   EnforcedStyle: prefer_alias_method
   Enabled: True
+Style/ArrayFirstLast:
+  Enabled: True
 Style/ArrayIntersect:
   Enabled: True
 Style/ArrayJoin:
@@ -330,9 +340,13 @@ Style/ConcatArrayLiterals:
   Enabled: True
 Style/ConditionalAssignment:
   Enabled: True
+Style/DataInheritance:
+  Enabled: True
 Style/DefWithParentheses:
   Enabled: True
 Style/Dir:
+  Enabled: True
+Style/DirEmpty:
   Enabled: True
 Style/EachForSimpleLoop:
   Enabled: True
@@ -358,6 +372,10 @@ Style/EndBlock:
 Style/EnvHome:
   Enabled: True
 Style/EvenOdd:
+  Enabled: True
+Style/ExactRegexpMatc:
+  Enabled: True
+Style/FileEmpty:
   Enabled: True
 Style/FileRead:
   Enabled: True
@@ -466,6 +484,8 @@ Style/RaiseArgs:
   Enabled: True
 Style/RandomWithOffset:
   Enabled: True
+Style/RedundantArrayConstructor:
+  Enabled: True
 Style/RedundantBegin:
   Enabled: True
 Style/RedundantCapitalW:
@@ -474,11 +494,15 @@ Style/RedundantConditional:
   Enabled: True
 Style/RedundantConstantBase:
   Enabled: True
+Style/RedundantCurrentDirectoryInPath:
+  Enabled: True
 Style/RedundantDoubleSplatHashBraces:
   Enabled: True
 Style/RedundantEach:
   Enabled: True
 Style/RedundantException:
+  Enabled: True
+Style/RedundantFilterChain:
   Enabled: True
 Style/RedundantFreeze:
   Enabled: True
@@ -488,7 +512,13 @@ Style/RedundantInitialize:
   Enabled: True
 Style/RedundantInterpolation:
   Enabled: True
+Style/RedundantLineContinuation:
+  Enabled: True
 Style/RedundantParentheses:
+  Enabled: True
+Style/RedundantRegexpArgument:
+  Enabled: True
+Style/RedundantRegexpConstructor:
   Enabled: True
 Style/RedundantReturn:
   Enabled: True
@@ -503,11 +533,15 @@ Style/RescueStandardError:
   EnforcedStyle: implicit
 Style/ReturnNil:
   Enabled: True
+Style/ReturnNilInPredicateMethodDefinition:
+  Enabled: True
 Style/SelectByRegexp:
   Enabled: True
 Style/SelfAssignment:
   Enabled: True
 Style/Semicolon:
+  Enabled: True
+Style/SingleLineDoEndBlock:
   Enabled: True
 Style/SingleLineMethods:
   Enabled: True
@@ -520,6 +554,8 @@ Style/StringLiterals:
 Style/StringLiteralsInInterpolation:
   Enabled: False
 Style/StringMethods:
+  Enabled: True
+Style/SuperWithArgsParentheses:
   Enabled: True
 Style/SymbolLiteral:
   Enabled: True
@@ -538,6 +574,8 @@ Style/WhenThen:
 Style/WhileUntilDo:
   Enabled: True
 Style/WhileUntilModifier:
+  Enabled: True
+Style/YAMLFileRead:
   Enabled: True
 Style/YodaCondition:
   Enabled: True
