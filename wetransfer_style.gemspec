@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = 'wetransfer_style'
-  s.version = '2.1.0'
+  s.version = '3.0.0'
   s.summary = 'At WeTransfer we code in style. This is our style.'
   s.description = s.summary
   s.homepage = 'https://github.com/WeTransfer/wetransfer_style'
@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
 
   # Pin Rubocop to a specific version, so CI bundle will not differ from any other
   # developer setup. This increases predictability of our pipeline.
-  s.add_dependency 'rubocop', '1.45.1'
+  s.add_dependency 'rubocop', '1.59.0'
 
   s.email = 'developers@wetransfer.com'
   s.authors = `git log --all --format='%cN' |sort -u`.split("\n")
