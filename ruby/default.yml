@@ -373,7 +373,7 @@ Style/EnvHome:
   Enabled: True
 Style/EvenOdd:
   Enabled: True
-Style/ExactRegexpMatc:
+Style/ExactRegexpMatch:
   Enabled: True
 Style/FileEmpty:
   Enabled: True
