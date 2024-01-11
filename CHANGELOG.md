@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.0.1
+
+[Changed]
+
+- Fix Style/ExactRegexpMatch
+
 ## 3.0.0
 
 [Changed]

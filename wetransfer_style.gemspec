@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = 'wetransfer_style'
-  s.version = '3.0.0'
+  s.version = '3.0.1'
   s.summary = 'At WeTransfer we code in style. This is our style.'
   s.description = s.summary
   s.homepage = 'https://github.com/WeTransfer/wetransfer_style'
